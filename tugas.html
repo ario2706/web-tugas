@@ -1,0 +1,154 @@
+<html><head>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Orbitron:wght@700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="body.css">
+
+
+  
+<style>
+    .motogp-style-title {
+      font-family: 'Russo One', sans-serif;
+      font-style: italic; 
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #000000; 
+        -webkit-text-stroke: 3px #e10600; 
+    }
+    
+    .motogp-style-dashboard {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 8vh;
+      margin: 0;
+      font-family: 'Russo One', sans-serif;
+      color: #ffffff;
+      background-color: #111;
+      padding: 10px;
+      outline: 2px solid #e10600;
+        clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); 
+         box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      overflow: hidden;
+      white-space: nowrap;
+      outline-offset: -5px;
+    }
+
+    body{
+            background: linear-gradient(
+                135deg,
+                #000000,
+                #1a1a1a,
+                #5c0000
+            )!important;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="motogp-style-title">website ario</h1>
+  <div class="motogp-style-dashboard"><marquee scrollamount="5" ><font size="10" class="teks-motogp">tugas pak aliman</font></marquee></div>
+
+
+<style>
+    .racing-btn{
+            background:linear-gradient(135deg,#e10600,#7a0000);
+            color:white;
+            border:none;
+            padding:15px 40px;
+            font-size:18px;
+            font-weight:bold;
+            border-radius:8px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .racing-btn:hover{
+            transform:scale(1.05);
+        }
+
+           #biodata{
+            display:none;
+            margin:20px auto;
+            width:300px;
+            background:#ffffff;
+            border:2px solid #e10600;
+            border-radius:10px;
+            padding:15px;
+            text-align:left;
+        }
+         
+</style>
+ <button class="racing-btn" onclick="tampilBiodata()">
+        BIODATA DIRI</button>
+        <div id="biodata">
+        <h3>Biodata Diri</h3>
+        <p><b>Nama:</b> Ario</p>
+        <p><b>Kelas:</b> X</p>
+        <p><b>Sekolah:</b> SMK islamic village.</p>
+        <p><b>Hobi:</b> Bermain basket</p>
+    </div>
+     <script>
+        function tampilBiodata(){
+    let bio = document.getElementById("biodata");
+
+    if(bio.style.display === "block"){
+        bio.style.display = "none";
+    }else{
+        bio.style.display = "block";
+    }
+}
+    </script>
+
+    <style>
+
+    .cita-btn{
+            background:linear-gradient(135deg,#e10600,#7a0000);
+            color:white;
+            border:none;
+            padding:15px 40px;
+            font-size:18px;
+            font-weight:bold;
+            border-radius:8px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+       .cita-btn:hover{
+            transform:scale(1.05);
+        }
+
+             #keinginan{
+            display:none;
+            margin:20px auto;
+            width:300px;
+            background:#ffffff;
+            border:2px solid #e10600;
+            border-radius:10px;
+            padding:15px;
+            text-align:left;
+        }
+</style>
+<button class="cita-btn" onclick="tampilKeinginan()">
+        keinginan masa depan</button>
+
+         <div id="keinginan">
+        <h3>Keinginan Masa Depan</h3>
+        <p><b>Cita-cita:</b> Menjadi programmer yang sukses</p>
+        <p><b>Visi:</b> Membuat aplikasi yang bermanfaat untuk masyarakat</p>
+        <p><b>Misi:</b> Terus belajar dan mengembangkan diri</p>
+        <p>semoga semua itu terwujud</p></div>
+
+         <script>
+        function tampilKeinginan(){
+    let keinginan = document.getElementById("keinginan");
+
+    if(keinginan.style.display === "block"){
+        keinginan.style.display = "none";
+    }else{
+        keinginan.style.display = "block";
+    }
+}
+    </script>   
+</body>
+     
+</html>
